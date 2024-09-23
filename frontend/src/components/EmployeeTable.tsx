@@ -7,6 +7,7 @@ import { EmployeeType } from "../types"
 import EmployeeDelete from "./actions/EmployeeDelete"
 import EmployeeEdit from "./actions/EmployeeEdit"
 import { ACTION_ICON_SIZE } from "../constants"
+import { Link } from "react-router-dom"
 
 
 type EmployeeTableHeaderItemType = {
@@ -59,7 +60,13 @@ function EmployeeRow(employee: EmployeeType) {
             <TableCell>
                 {employee.photo && <img src={employee.photo} alt={employee.full_name} loading="lazy" width={40} height={40} className="rounded" /> || <span className="text-red-500">NULL</span>}
             </TableCell>
-            <TableCell>{employee.full_name}</TableCell>
+            <TableCell>
+                <Link to="">
+                    <Button size="sm" variant="link">
+                        {employee.full_name}
+                    </Button>
+                </Link>
+            </TableCell>
             <TableCell>{employee.email}</TableCell>
             <TableCell>{mobile}</TableCell>
             <TableCell>{employee.date_of_birth}</TableCell>
@@ -74,8 +81,10 @@ function EmployeeRow(employee: EmployeeType) {
             </TableCell>
 
             <TableCell>
-                <EmployeeEdit {...employee} />
-                <EmployeeDelete {...employee} />
+                <div className="flex space-x-0">
+                    <EmployeeEdit {...employee} />
+                    <EmployeeDelete {...employee} />
+                </div>
             </TableCell>
         </TableRow>
     )

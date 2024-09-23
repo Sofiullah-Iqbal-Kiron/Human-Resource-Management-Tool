@@ -8,11 +8,12 @@ import Employees from "./pages/Employees";
 import AddEmployee from "./pages/AddEmployee";
 import UpdateEmployee from "./pages/UpdateEmployee";
 import EmployeeDetails from "./pages/EmployeeDetails";
+import ThemeProvider from "./components/ThemeProvider";
 
 
 export default function App() {
   return (
-    <>
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="employees/page/:pageNo" element={<Employees />} />
@@ -22,6 +23,6 @@ export default function App() {
       </Routes>
 
       <Toaster />
-    </>
+    </ThemeProvider>
   )
 }

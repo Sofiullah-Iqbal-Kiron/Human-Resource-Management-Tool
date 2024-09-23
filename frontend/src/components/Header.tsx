@@ -1,4 +1,5 @@
 import logo from "../assets/logo.png"
+import ThemeToggler from "./ThemeToggler"
 
 
 export default function Header() {
@@ -8,6 +9,7 @@ export default function Header() {
                 <img src={logo} alt="Wafi Solutions" width={300} />
             </div>
             <h3 className="text-xl">Human Resource Management System</h3>
+            <ThemeToggler />
         </section>
     )
 }

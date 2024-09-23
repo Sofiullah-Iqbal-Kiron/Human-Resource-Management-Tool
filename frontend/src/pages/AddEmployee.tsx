@@ -7,7 +7,7 @@ export default function AddEmployee() {
     return (
         <section>
             <Header />
-            <PageHead title="Add an Employee" />
+            <PageHead title="Add New Employee" />
             <div className="px-2">
                 <EmployeeAddForm />
             </div>
