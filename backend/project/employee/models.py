@@ -44,7 +44,7 @@ class Employee(Model):
         return f"{self.first_name} {self.last_name}".strip()
     
     @property
-    def still_employee(self):
+    def still_employee(self) -> bool:
         """ Flag to indicated that, this employee still works for that company or leaved permanently. """
 
         still_employee = True
