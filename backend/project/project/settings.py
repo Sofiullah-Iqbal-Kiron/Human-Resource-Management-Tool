@@ -17,7 +17,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # django rest framework
+    # 3'rd party
     'rest_framework',
     'phonenumber_field',
     'corsheaders',
