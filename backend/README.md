@@ -34,4 +34,4 @@ Backend server of HRMS. The verbose Human Resource Management System entirely de
 
 ### ToDo
 
-- [ ] Use postgresql
+- [ ] Use PostgreeSQL
