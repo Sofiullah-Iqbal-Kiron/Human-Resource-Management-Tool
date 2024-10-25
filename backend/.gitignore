@@ -4,7 +4,6 @@
 employee/__pycache__
 project/__pycache__
 
-.env
 env
 media
 db.sqlite3
