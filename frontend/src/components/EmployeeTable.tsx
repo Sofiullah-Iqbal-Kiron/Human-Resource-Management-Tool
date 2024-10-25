@@ -61,7 +61,7 @@ function EmployeeRow(employee: EmployeeType) {
                 {employee.photo && <img src={employee.photo} alt={employee.full_name} loading="lazy" width={40} height={40} className="rounded" /> || <span className="text-red-500">NULL</span>}
             </TableCell>
             <TableCell>
-                <Link to="">
+                <Link to={`../employees/${employee.id}/details`}>
                     <Button size="sm" variant="link">
                         {employee.full_name}
                     </Button>

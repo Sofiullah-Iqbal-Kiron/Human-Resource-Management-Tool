@@ -1,3 +1,7 @@
+# Preamble
+
+Backend server of HRMS. The verbose Human Resource Management System entirely developed by [me](https://github.com/Sofiullah-Iqbal-Kiron).
+
 ### Setup
 
 #### 1. Create virtual environment
@@ -27,3 +31,7 @@
 #### 7. Run backend sever locally
 
 `python manage.py runserver`
+
+### ToDo
+
+- [ ] Use postgresql

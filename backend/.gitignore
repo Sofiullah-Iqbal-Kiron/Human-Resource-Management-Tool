@@ -1,0 +1,9 @@
+# editor config
+.vscode
+
+employee/__pycache__
+project/__pycache__
+
+env
+media
+db.sqlite3

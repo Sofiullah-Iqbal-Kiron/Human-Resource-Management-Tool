@@ -1,13 +1,16 @@
 from pathlib import Path
+from decouple import config
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'django-insecure-&qu&wejmqcak-a)2c!+w4ypu9g^*55b-9-op!vu*3zxa@tr+7u'
+SECRET_KEY = config('SECRET_KEY')
 
-DEBUG = True
+DEBUG = config('DEBUG', cast=bool)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '*'
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -68,7 +71,7 @@ DATABASES = {
 
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
-    'PAGE_SIZE': 10
+    'PAGE_SIZE': 100
 }
 
 AUTH_PASSWORD_VALIDATORS = [

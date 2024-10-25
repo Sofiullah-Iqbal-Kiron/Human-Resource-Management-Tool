@@ -1,7 +1,7 @@
 backend/env
-backend/project/.vscode
-backend/project/employee/__pycache__
-backend/project/employee/migrations/__pycache__
-backend/project/media
-backend/project/project/__pycache__
+backend/.vscode
+backend/employee/__pycache__
+backend/employee/migrations/__pycache__
+backend/media
+backend/project/__pycache__
 db.sqlite3
